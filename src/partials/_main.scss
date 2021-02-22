@@ -1,0 +1,150 @@
+.jumbo {
+  height: 500px;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+
+  .text-area {
+    padding: 100px 0;
+
+    h2 {
+      font-size: 3em;
+      padding: 20px 0;
+    }
+
+    & > p {
+      font-size: 1.3em;
+      line-height: 1.7;
+      width: 50%;
+    }
+
+    .limited {
+      padding: 40px 0;
+      color: purple;
+      font-weight: lighter;
+
+      em strong {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+
+    a {
+      display: inline-block;
+      padding: 15px 40px;
+      background-color: $primarycolor;
+      color: $linkHover;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 1px solid $primarycolor;
+      margin-right: 5px;
+
+      &:last-child {
+        background-color: rgba(255, 0, 0, 0);
+        color: $primarycolor;
+        border: 1px solid $primarycolor;
+      }
+    }
+  }
+}
+
+main {
+  background-color: #e8e8e8;
+  padding: 50px 0;
+
+  .row1 {
+    width: 100%;
+    @include myflex(space-between, center);
+    flex-wrap: wrap;
+    padding: 30px 0;
+
+    h2 {
+      font-size: 1.7em;
+      padding: 30px 0;
+      font-weight: 400;
+      width: 100%;
+      text-align: center;
+    }
+
+    .col-3 {
+      width: 30%;
+      background-color: #fff;
+
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      a {
+        display: inline-block;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      h3,
+      p,
+      a {
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  .row2 {
+    @include myflex(space-between, center);
+    flex-wrap: wrap;
+
+    .text,
+    .banner {
+      width: 50%;
+      height: 400px;
+    }
+
+    div:nth-child(2) {
+      background-image: url(../img/4.png);
+      background-color: rgb(35, 36, 37);
+      background-size: cover;
+    }
+
+    div:nth-child(3) {
+      background-image: url(../img/5.jpg);
+      background-color: rgb(35, 36, 37);
+      background-size: cover;
+    }
+
+    div:nth-child(5) {
+      background-image: url(../img/5.jpg);
+      background-color: rgb(35, 36, 37);
+      background-size: cover;
+    }
+
+    .text {
+      background-color: #3c1567;
+    }
+
+    .text {
+      color: $linkHover;
+      @include myflex(center, flex-start);
+      flex-direction: column;
+      padding: 40px;
+
+      h3 {
+        font-size: 2.5em;
+      }
+
+      p {
+        line-height: 1.6;
+        margin: 20px 0;
+      }
+
+      a {
+        color: $primarycolor;
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #fff;
+        display: inline-block;
+        margin-top: 20px;
+      }
+    }
+  }
+}
