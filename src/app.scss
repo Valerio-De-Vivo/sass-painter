@@ -79,5 +79,34 @@ header {
         }
       }
     }
+
+    .drop {
+      position: relative;
+
+      &:hover .dropdown {
+        display: block;
+      }
+
+      .dropdown {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+
+          li {
+            width: 100%;
+            padding: 30px;
+          }
+        }
+      }
+    }
   }
 }

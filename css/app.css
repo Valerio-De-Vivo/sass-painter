@@ -86,3 +86,27 @@ header .main nav ul a {
   color: white;
   text-decoration: none;
 }
+header .main .drop {
+  position: relative;
+}
+header .main .drop:hover .dropdown {
+  display: block;
+}
+header .main .drop .dropdown {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+header .main .drop .dropdown ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+header .main .drop .dropdown ul li {
+  width: 100%;
+  padding: 30px;
+}
