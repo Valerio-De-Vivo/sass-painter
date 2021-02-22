@@ -1,1 +1,19 @@
-$primarycolor: blue;
+// COLORI
+
+$primarycolor: rgb(0, 0, 0);
+$iconcolor: #049dff;
+$linkcolor: #787878;
+$linkHover: white;
+
+// FONT
+
+$textcolor: white;
+$size1: 18px;
+
+// MIXIN
+
+@mixin myflex($a, $b) {
+  display: flex;
+  justify-content: $a;
+  align-items: $b;
+}

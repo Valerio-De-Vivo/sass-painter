@@ -1,1 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+header {
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+header .top {
+  height: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .top ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .top ul li {
+  padding-right: 10px;
+}
+header .top a {
+  color: #787878;
+  text-decoration: none;
+}
+header .top a:hover {
+  color: white;
+  text-decoration: underline;
+}
+header .top a i {
+  color: #049dff;
+  padding-right: 5px;
+}
+header .top select {
+  margin: 0 10px;
+}
+header .main {
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .main img {
+  width: 10%;
+  display: inline-block;
+}
+header .main nav {
+  width: 80%;
+  height: 100%;
+}
+header .main nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style: none;
+  font-size: 18px;
+}
+header .main nav ul li {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+}
+header .main nav ul li:hover {
+  background-color: white;
+}
+header .main nav ul li:hover a {
+  color: black;
+}
+header .main nav ul a {
+  color: white;
+  text-decoration: none;
+}
