@@ -67,7 +67,7 @@ header .main nav ul {
   justify-content: space-between;
   align-items: flex-end;
   list-style: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 header .main nav ul li {
   height: 100%;
@@ -99,6 +99,7 @@ header .main .drop .dropdown {
   left: 50%;
   transform: translateX(-50%);
   display: none;
+  background-color: white;
 }
 header .main .drop .dropdown ul {
   display: flex;
@@ -109,4 +110,46 @@ header .main .drop .dropdown ul {
 header .main .drop .dropdown ul li {
   width: 100%;
   padding: 30px;
+}
+
+.jumbo {
+  height: 500px;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+}
+.jumbo .text-area {
+  padding: 100px 0;
+}
+.jumbo .text-area h2 {
+  font-size: 3em;
+  padding: 20px 0;
+}
+.jumbo .text-area > p {
+  font-size: 1.3em;
+  line-height: 1.7;
+  width: 50%;
+}
+.jumbo .text-area .limited {
+  padding: 40px 0;
+  color: purple;
+  font-weight: lighter;
+}
+.jumbo .text-area .limited em strong {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.jumbo .text-area a {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  margin-right: 5px;
+}
+.jumbo .text-area a:last-child {
+  background-color: rgba(255, 0, 0, 0);
+  color: black;
+  border: 1px solid black;
 }
